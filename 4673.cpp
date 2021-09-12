@@ -14,20 +14,11 @@ int main() {
 			cout << i << endl;
 		}
 	}
-}
-
-
-
-int d(int n) {
-	vector<int> a;
-	int h = 0;
+}int d(int n) {
 	int dn = n;
 	while (n > 0) {
-		a.push_back(n % 10);
+		dn += n % 10;
 		n = n / 10;
-	}
-	for (int i = 0; i < a.size(); i++) {
-		dn += a[i];
 	}
 	return dn;
 }
